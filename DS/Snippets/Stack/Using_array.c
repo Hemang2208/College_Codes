@@ -1,11 +1,11 @@
 #include<stdio.h>
-#define max 100 
+#define max 5
 int Stack[max] ;
-int top=-1;
+int top=-1; // empty Stack
 
 void push(int val){
     if (top==max-1){
-        printf("overflow");
+        printf("overflow \n");
     }
     else{
         top+=1;
@@ -15,7 +15,7 @@ void push(int val){
 
 int pop(){
     if (top==-1){
-        printf("underflow");
+        printf("underflow \n");
     }
     else{
         top-=1;
@@ -24,7 +24,8 @@ int pop(){
 }
 
 int peek(){
-    return Stack[top];
+    if (top==-1) return -1;
+    else return Stack[top];
 }
 
 int main(){
@@ -32,8 +33,15 @@ int main(){
         push(i);
     }
 
+    push(6); // overflow
+
     printf("%d \n",peek());
 
-    printf("%d was popped\n",pop());
+     for (int i=0 ; i<5 ; i++){
+        printf("%d was popped\n",pop());
+    }
+
+    pop(); // underflow
+
     printf("%d \n",peek());
 }
