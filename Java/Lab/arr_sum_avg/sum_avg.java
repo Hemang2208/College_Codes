@@ -4,7 +4,7 @@ class sum_avg{
     int a[]=new int[5];
     int s=0;
     void input(){
-        System.out.println("Enter array elements (5)");
+        System.out.print("Enter array elements (5)");
         for(int i=0;i<a.length;i++){
             a[i]=sc.nextInt();
         }
