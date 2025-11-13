@@ -45,8 +45,7 @@ int main(){
 
     index *indexarray=makeindex(arr,n,step);
 
-    printf("\n");
-
+    printf("IndexArray :\n");
     for (int i=0 ; i<(n/step) ; i++){
         printf("%d %d\n",indexarray[i].t,indexarray[i].val);
     }
