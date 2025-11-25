@@ -86,13 +86,13 @@ int main(){
 
     peek();
 
-    dequeue();
-    dequeue();
+//     dequeue();
+//     dequeue();
 
-    peek();
+//     peek();
 
-    dequeue();
-    dequeue();
+//     dequeue();
+//     dequeue();
 
-    peek();
+//     peek();
 }
