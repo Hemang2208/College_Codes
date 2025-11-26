@@ -7,12 +7,13 @@ class pal {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         sc.close();
+        s = s.toLowerCase();
 
         int i = 0, j = s.length() - 1;
         boolean flag = true;
         
         while (i < j) {
-            if (s.charAt(i) != s.charAt(j)) {
+            if (s.charAt(i)!= s.charAt(i)) {
                 flag = false;
                 break;
             }
