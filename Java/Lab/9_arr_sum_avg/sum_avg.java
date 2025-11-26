@@ -4,15 +4,13 @@ class sum_avg {
     int a[] = new int[5];
     int s = 0;
 
-    void input() {
+    void input(Scanner sc) {
         System.out.print("Enter array elements (5): ");
 
-        Scanner sc = new Scanner(System.in);
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
         }
 
-        sc.close();
     }
 
     int sum() {
@@ -31,9 +29,10 @@ class sum_avg {
     public static void main(String[] args) {
 
         sum_avg obj = new sum_avg();
-        obj.input();
-
         Scanner sc = new Scanner(System.in);
+
+        obj.input(sc);
+
         System.out.println("Enter s for sum of elements \t a for Average of elements \t any other key to quit");
         char c = sc.next().charAt(0);
         sc.close();
