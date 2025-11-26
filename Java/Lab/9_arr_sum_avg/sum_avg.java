@@ -32,7 +32,7 @@ class sum_avg {
         Scanner sc = new Scanner(System.in);
 
         obj.input(sc);
-
+        
         System.out.println("Enter s for sum of elements \t a for Average of elements \t any other key to quit");
         char c = sc.next().charAt(0);
         sc.close();
