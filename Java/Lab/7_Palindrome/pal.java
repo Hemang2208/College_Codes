@@ -13,7 +13,7 @@ class pal {
         boolean flag = true;
         
         while (i < j) {
-            if (s.charAt(i)!= s.charAt(i)) {
+            if (s.charAt(i)!= s.charAt(j)) {
                 flag = false;
                 break;
             }

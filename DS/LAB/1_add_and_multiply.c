@@ -53,7 +53,7 @@ void Multiply()
                 C[i][j] += A[i][k] * B[k][j];
             }
         }
-    }  
+    }
 
     // Printing A
     for (int i = 0; i < rows1; i++)

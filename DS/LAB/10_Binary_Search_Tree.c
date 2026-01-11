@@ -33,6 +33,7 @@ Node *insert(struct Node *root, int data)
     {
         root->left = insert(root->left, data);
     }
+
     // Insert in right subtree if data is greater than root
     else if (data > root->data)
     {
@@ -49,6 +50,7 @@ Node *findMin(struct Node *root)
     {
         root = root->left;
     }
+    
     return root;
 }
 

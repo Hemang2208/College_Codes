@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define max 5
+
 typedef struct node
 {
     int val;
@@ -20,6 +22,7 @@ void push(int x)
     node *newnode = malloc(sizeof(node));
     newnode->val = x;
     newnode->next = NULL;
+
     if (stk.count == max)
         printf("Overflow\n");
     else
@@ -47,6 +50,7 @@ void peek()
         printf("Stack empty");
     else
         printf("%d \n", stk.top->val);
+        
     printf("\n");
 }
 
